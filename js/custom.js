@@ -8,7 +8,17 @@ $(document).ready(function () {
 		slidesToShow: 4,
 		adaptiveHeight: true,
 		prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-		nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+		nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+		responsive: [
+			{
+			  breakpoint: 767,
+			  settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+			},
+		  ],
+	
 	});
 
 
@@ -132,6 +142,14 @@ var incrementMinus = buttonMinus.click(function() {
     $n.val(amount-1);
   }
 });
+
+
+$(document).on('click','.nav-drop a', function(){
+	$('.main-menu').addClass('drop-show');
+});
+$(document).on('click','.close', function(){
+	$('.main-menu').removeClass('drop-show');
+}); 
 
 
 }); /*====================== all js end ====================== */

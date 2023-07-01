@@ -6,6 +6,12 @@ font-family: 'Inter', sans-serif;
 html{
   scroll-behaviour : smooth;
 } 
+.navbar button.close {
+  display: none;
+}
+.icon-nav {
+  margin-left: 8px;
+}
 body {
   font-family: 'Inter', sans-serif;
 	touch-action: manipulation;
@@ -931,7 +937,7 @@ span.guru-type {
   background: #fff;
   width: 30%;
   height: 100vh;
-  z-index: 9999;
+  z-index: 99999;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
   background-color: #fff;
   transform: translateX(150%);
@@ -1298,60 +1304,3 @@ section.banner-slide .slick-dots li button:before{
 
 
 /*=================================== media query css ===================================*/
-
-@media (min-width: 1200px){
-  .section_services:after {
-    width: 46px;
-}
-}
-@media (min-width: 1920px){
-  .section_services:after {
-    width: 375px;
-}
-}
-
-  @media only screen and (min-width: 300px) and (max-width: 767px) {    
-
-    button.navbar-toggler.collapsed i:before {
-      content: "\f0c9";
-    }
-    button.navbar-toggler i:before {
-      content: "\f00d";
-    }
-    button.navbar-toggler i:before {
-      font-size: 20px;
-  }
-  button.navbar-toggler i {
-    position: absolute;
-    top: 25px;
-    right: 18px;
-}
-    i.fa.fa-times {
-      display: none;
-    }
-    .float-right {
-      float: none !important;
-    }
-    ul.main-menu a{
-      justify-content: center;
-      width: 100%;
-      margin: 0 !important;
-      padding: 15px 0px !important;
-    }
-    .navbar-collapse{
-      text-align: center;
-    }
-    .main-menuright {
-      margin-top: 20px;
-      margin-bottom: 30px;
-  }
-
-  }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-   
-  }
-  @media only screen and (min-width: 991px) and (max-width: 1024px) {
-
-  }
-
-  
