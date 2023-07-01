@@ -1281,7 +1281,7 @@ section.banner-slide .slick-dots li button:before{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 99999;
   background: #fff;
   -webkit-transition: -webkit-transform 0.4s ease;
   -ms-transition: -ms-transform 0.4s ease;
