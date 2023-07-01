@@ -18,9 +18,9 @@
    <!-- animation css -->
    <!-- cursor animated -->
    <link rel="stylesheet" type="text/css" media="screen" href="css/cursor.css">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet"
+   <link href="css/slick-theme.css" rel="stylesheet"
       type="text/css">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" type="text/css">
+   <link href="css/slick.css" rel="stylesheet" type="text/css">
 
    <!-- cursor animated -->
 </head>
@@ -138,11 +138,14 @@
                         <span
                            class="count bg-green text-white d-flex justify-content-center align-items-center position-absolute">5</span>
                      </a>
-                     <a href="#" class=" text-black position-relative">
-                        <img src="./images/shopping-bag.png">
+                     <div class="cart">
+                        <button class="text-black bg-transparent p-0 border-0 cart-btn position-relative">
+                           <img src="./images/shopping-bag.png">
                         <span
                            class="count bg-marun text-white d-flex justify-content-center align-items-center position-absolute">5</span>
-                     </a>
+
+                        </button>
+                     </div>
                   </div>
                </div>
             </div>
@@ -180,9 +183,9 @@
                         </div>
                         <div class="product-content my-3">
                            <h6 class="text-black">10 Mukhi Rudraksha With 5 Mukhi Rudraksha Mala</h6>
-                           <p class="product-price text-marun mt-2">₹ 340.00</p>
+                           <p class="product-price text-marun mt-2 ">₹ 340.00</p>
                         </div>
-                        <button class="product-btn">
+                        <button class="product-btn cart-btn">
                            Add to cart
                         </button>
                      </div>
@@ -312,6 +315,13 @@
                                  </h3>
                               </div>
                            </div>
+                           <ul class="special-list p-0 mb-5">
+                              <li class="text-left font-small">Relationship Issues</li>
+                              <li class="text-left font-small">Breakup Issues</li>
+                              <li class="text-left font-small"> Marriage Issues, Anxiety, Anger Management, General Anxiety</li>
+                              <li class="text-left font-small"> Postpartum Depression</li>
+                              <li class="text-left font-small">Post Traumatic Stress Disorder (PTSD)</li>
+                           </ul>
                            <div class="subscribe-footer">
                               <a href="" class="btn-large">Choose Plan</a>
                            </div>
@@ -333,6 +343,13 @@
                                  </h3>
                               </div>
                            </div>
+                           <ul class="special-list p-0 mb-5">
+                              <li class="text-left font-small">Relationship Issues</li>
+                              <li class="text-left font-small">Breakup Issues</li>
+                              <li class="text-left font-small"> Marriage Issues, Anxiety, Anger Management, General Anxiety</li>
+                              <li class="text-left font-small"> Postpartum Depression</li>
+                              <li class="text-left font-small">Post Traumatic Stress Disorder (PTSD)</li>
+                           </ul>
                            <div class="subscribe-footer">
                               <a href="" class="btn-large">Choose Plan</a>
                            </div>
@@ -351,6 +368,13 @@
                                  </h3>
                               </div>
                            </div>
+                           <ul class="special-list p-0 mb-5">
+                              <li class="text-left font-small">Relationship Issues</li>
+                              <li class="text-left font-small">Breakup Issues</li>
+                              <li class="text-left font-small"> Marriage Issues, Anxiety, Anger Management, General Anxiety</li>
+                              <li class="text-left font-small"> Postpartum Depression</li>
+                              <li class="text-left font-small">Post Traumatic Stress Disorder (PTSD)</li>
+                           </ul>
                            <div class="subscribe-footer">
                               <a href="" class="btn-large">Choose Plan</a>
                            </div>
@@ -631,7 +655,7 @@
                </div>
             </div>
          </section>
-         <section class="banner-add  section-spacer">
+         <section class="banner-add pt-5">
             <div class="row">
                <div class="col-md-6 p-0">
                   <div class="banner-add-item">
@@ -646,7 +670,7 @@
             </div>
          </section>
 
-         <section class="blog section-spacer pt-0">
+         <section class="blog section-spacer">
            <div class="container">
             <div class="section-heading text-center">
                <h2>Tips From  <span class="text-green">Grus</span></h2>
@@ -741,7 +765,100 @@
            </div>
          </section>
 
-
+         <div class="empty-cart">
+            <div class="empty-state">
+               <div class="cart-heading d-flex justify-content-between align-items-center">
+                  <h3 class="mb-0 text-capitalize">Shopping <span class="text-green">cart</span> </h3>
+               <button class="btn-cart-close text-black bg-transparent p-0 border-0">
+                     <img src="./images/close.svg" class="w-100">
+                  </button>
+               </div>
+               <div class="cart-content text-center mt-4">
+                  <img src="./images/empty-cart.png">
+                  <h4 class="my-4">No products in cart</h4>
+                  <a href="" class="cart-btn">
+                     Return to shop
+                  </a>
+               </div>
+            </div>
+            <div class="product-detail-state">
+               <div class="cart-heading d-flex justify-content-between align-items-center">
+                  <h3 class="mb-0 text-capitalize">Shopping <span class="text-green">cart</span> </h3>
+               <button class="btn-cart-close text-black bg-transparent p-0 border-0">
+                     <img src="./images/close.svg" class="w-100">
+                  </button>
+               </div>
+               <div class="product-state-detail">
+                  <div>
+                     <div class="product-wrap-item d-flex align-items-center mb-4">
+                     <div class="product-detail-wrap-im">
+                        <img src="./images/products/product-1.webp" class="w-100 h-100 ">
+                     </div>
+                     <div class="product-detail-wrap-content product-content">
+                        <div>
+                           <h6 class="text-black">Black Sulemani Hakik Bracelet</h6>
+                           <p class="product-price text-marun mt-2 ">₹ 340.00</p>
+                        </div>
+                        <div class="d-flex align-items-end">
+                           <div class="qty-container">
+                              <button class="qty-btn-minus btn-light" type="button">
+                               -
+                              </button>
+                             <input type="text" name="qty" value="0" class="input-qty"/>
+                              <button class="qty-btn-plus btn-light" type="button">
+                                +
+                              </button>
+                          </div>
+                          <button class="border-0 bg-transparent text-underline font-small text-marun remove">Remove</button>
+                        </div>
+                     </div>
+                     
+                        
+                    
+                  </div>
+                  <div class="product-wrap-item d-flex align-items-center mb-4">
+                     <div class="product-detail-wrap-im">
+                        <img src="./images/products/product-1.webp" class="w-100 h-100 ">
+                     </div>
+                     <div class="product-detail-wrap-content product-content">
+                        <div>
+                           <h6 class="text-black">Black Sulemani Hakik Bracelet</h6>
+                           <p class="product-price text-marun mt-2 ">₹ 340.00</p>
+                        </div>
+                        <div class="d-flex align-items-end">
+                           <div class="qty-container">
+                              <button class="qty-btn-minus btn-light" type="button">
+                               -
+                              </button>
+                             <input type="text" name="qty" value="0" class="input-qty"/>
+                              <button class="qty-btn-plus btn-light" type="button">
+                                +
+                              </button>
+                          </div>
+                          <button class="border-0 bg-transparent text-underline font-small text-marun remove">Remove</button>
+                        </div>
+                     </div>
+                     
+                        
+                    
+                  </div>
+                  </div>
+                  <div class="product-cart-footer">
+                     <div class="d-flex justify-content-between product-cart-total">
+                        <h6 class="mb-0">Subtotal
+                        </h6>
+                        <h6 class="mb-0 cart-price font-semibold">₹1,470.00</h6>
+                     </div>
+                     <div class="d-flex justify-content-between">
+                        <h6 class="mb-0 ">Total</h6>
+                        <h6 class="mb-0 cart-price font-semibold">₹1,470.00 includes ₹224.24 GST</h6>
+                     </div>
+                     <a href="" class="btn-large d-block text-center checkout mt-3">Checkout</a>
+                     <a href="" class="text-marun font-semibold d-block mt-3 text-underline text-center">view cart</a>
+                  </div>
+               </div>
+            </div>
+         </div>
 
       </div>
    </div>
@@ -834,7 +951,7 @@
    <!-- <script type="text/javascript" src="js/cursor.js"></script> -->
    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      src="js/slick.min.js"></script>
    <!-- page animation section js start -->
    <!-- page animation section js end -->
    <script type="text/javascript" src="js/custom.js"></script>

@@ -1,9 +1,19 @@
 $(document).ready(function () {
 
+	$('.related-products').slick({
+		arrow: true,
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 4,
+		adaptiveHeight: true,
+		prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+		nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+	});
 
 
 	$('.top-slider').slick({
-		arrow: false,
+		arrow: true,
 		dots: false,
 		centerMode: true,
 		infinite: true,
@@ -38,17 +48,17 @@ $(document).ready(function () {
 		$(".main_page").css('min-height', min_height + 'px');
 	});
 
-	// $(window).scroll(function () {
-	// 	var navHeight = $('#custom-header').height();
-	// 	var sticky = $('#custom-header');
-	// 	if ($(window).scrollTop() > 0) {
-	// 		sticky.addClass("sticky")
-	// 		$('#dashboard-page').css('padding-top', navHeight + "px");
-	// 	} else {
-	// 		sticky.removeClass("sticky");
-	// 		$('#dashboard-page').css('padding-top', 0);
-	// 	}
-	// });
+	$(window).scroll(function () {
+		var navHeight = $('#custom-header').height();
+		var sticky = $('#custom-header');
+		if ($(window).scrollTop() > 0) {
+			sticky.addClass("sticky")
+			$('#dashboard-page').css('padding-top', navHeight + "px");
+		} else {
+			sticky.removeClass("sticky");
+			$('#dashboard-page').css('padding-top', 0);
+		}
+	});
 	$('.jb_front_nav_close button').on('click', function () {
 		$('.navbar-collapse').collapse('hide');
 	});
@@ -85,6 +95,43 @@ $(document).ready(function () {
 		$('.navbar').removeClass('search-show');
 	});  
 
+	$(document).on('click','.cart-btn', function(){
+		$('.page-content').addClass('cart-show');
+	});
+	$(document).on('click','.btn-cart-close', function(){
+		$('.page-content').removeClass('cart-show');
+	});  
+
+
+
+	$(document).on('click','.remove', function(){
+		$('.empty-cart').addClass('no-cart');
+	});
+	// $(document).on('click','.btn-cart-close', function(){
+	// 	$('.page-content').removeClass('empty-state');
+	// });  
+
+
+
+	var buttonPlus  = $(".qty-btn-plus");
+var buttonMinus = $(".qty-btn-minus");
+
+var incrementPlus = buttonPlus.click(function() {
+  var $n = $(this)
+  .parent(".qty-container")
+  .find(".input-qty");
+  $n.val(Number($n.val())+1 );
+});
+
+var incrementMinus = buttonMinus.click(function() {
+  var $n = $(this)
+  .parent(".qty-container")
+  .find(".input-qty");
+  var amount = Number($n.val());
+  if (amount > 0) {
+    $n.val(amount-1);
+  }
+});
 
 
 }); /*====================== all js end ====================== */

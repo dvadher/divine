@@ -173,7 +173,7 @@
                   <div class="my-account">
                      <div class="row">
                         <div class="col-md-4">
-                           <div class="my-aacount-left">
+                           <div class="my-aacount-left h-100">
                               <ul class="nav nav-tabs d-block border-0" id="myTab" role="tablist">
                                  <li class="nav-item position-relative d-block" role="presentation">
                                     <button class="nav-link active" id="dashboard-tab" data-toggle="tab"
@@ -201,6 +201,11 @@
                                        aria-controls="wishlist" aria-selected="false">wishlist</button>
                                  </li>
                                  <li class="nav-item position-relative d-block" role="presentation">
+                                    <button class="nav-link" id="packages-tab" data-toggle="tab"
+                                       data-target="#packages" type="button" role="tab"
+                                       aria-controls="packages" aria-selected="false">packages</button>
+                                 </li>
+                                 <li class="nav-item position-relative d-block" role="presentation">
                                     <a href="index.html
                                     " class="nav-link d-flex justify-content-center ali">logout</a>
                                  </li>
@@ -212,9 +217,60 @@
                               <div class="tab-pane fade show active" id="dashboard" role="tabpanel"
                                  aria-labelledby="dashboard-tab">
                                  <div class="auth-tab mt-4">
-                                    <div class="tab-header">
-                                       <p>Hello divyavadher76 (<a class="text-marun" href="index.html">Log out</a>)</p>
-                                       <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+                                    <div class="ta b-header">
+                                       <p>Hello divyavadher76 (<a class="text-marun font-semibold" href="index.html">Log out</a>)</p>
+                                       <p>From your account dashboard you can view 
+                                          your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+                                    </div>
+                                    <div class="row dashboard-row mt-4">
+                                       <div class="col-md-4">
+                                          <a href="#" class="dashboard-item text-center">
+                                             <div class="guru-logo mx-auto">
+                                                <img src="./images/order.png" class="w-100 h-100">
+                                             </div>
+                                             <h5 class="text-black font-semibold mt-2">Orders</h5>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <a href="#" class="dashboard-item text-center">
+                                             <div class="guru-logo mx-auto">
+                                                <img src="./images/download.png" class="w-100 h-100">
+                                             </div>
+                                             <h5 class="text-black font-semibold mt-2">Downloads</h5>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <a href="#" class="dashboard-item text-center">
+                                             <div class="guru-logo mx-auto">
+                                                <img src="./images/addres.png" class="w-100 h-100">
+                                             </div>
+                                             <h5 class="text-black font-semibold mt-2">Addresses</h5>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <a href="#" class="dashboard-item text-center">
+                                             <div class="guru-logo mx-auto">
+                                                <img src="./images/user.png" class="w-100 h-100">
+                                             </div>
+                                             <h5 class="text-black font-semibold mt-2">Account details</h5>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <a href="#" class="dashboard-item text-center">
+                                             <div class="guru-logo mx-auto">
+                                                <img src="./images/heart.svg" class="w-100 h-100">
+                                             </div>
+                                             <h5 class="text-black font-semibold mt-2">Wishlist</h5>
+                                          </a>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <a href="#" class="dashboard-item text-center">
+                                             <div class="guru-logo mx-auto">
+                                                <img src="./images/package.png" class="w-100 h-100">
+                                             </div>
+                                             <h5 class="text-black font-semibold mt-2">Packges</h5>
+                                          </a>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -360,7 +416,39 @@
                                     </div>
                               </div>
                            </div>
-
+                           <div class="tab-pane fade" id="packages" role="tabpanel"
+                           aria-labelledby="packages-tab">
+                              <div class="package-tab-content">
+                                 <div class="tab-heading mb-4">
+                                    <h4 class="font-sbold">welcome to Paid plan of <span class="text-green">Divine Path</span></h4>
+                                 </div>
+                                 <div class="package-featured position-relative">
+                                    <h6 class="advantages-heading">Advantages</h6>
+                                    <ul class="special-list">
+                                       <li class="font-small">Relationship Issues</li>
+                                       <li class="font-small">Breakup Issues</li>
+                                       <li class="font-small"> Marriage Issues, Anxiety, Anger Management, General Anxiety</li>
+                                       <li class="font-small"> Postpartum Depression</li>
+                                       <li class="font-small">Post Traumatic Stress Disorder (PTSD)</li>
+                                       <li class="font-small">Attention Deficit Hyperactivity Disorder (ADHD)</li>
+                                       <li class="font-small"> Loneliness &amp; Family Issues</li>
+                                       <li class="font-small">Parenting Guidance And Counselling</li>
+                                    </ul>
+                                 </div>
+                                 <div class="guru my-4 position-relative d-inline-block">
+                                    <a href="#" class="product-btn d-inline-block">
+                                      Visit Gurus
+                                     </a>
+                                     <span class="package-count">+5</span>
+                                 </div>
+                                 <div class="for-more d-flex justify-content-between">
+                                    <p class="mb-0 font-semibold d-flex align-items-center">🔒 for more features you should purchase our premium plan 🔑</p>
+                                    <a href="#" class="product-btn d-block">
+                                      Purchase Now
+                                    </a>
+                                 </div>
+                              </div>
+                        </div>
                            </div>
                         </div>
                      </div>
