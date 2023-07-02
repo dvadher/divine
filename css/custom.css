@@ -1296,7 +1296,14 @@ section.banner-slide .slick-dots li button:before{
 .custom-header.sticky .top-slider {
   display: none;
 }
-
+.custom-header {
+  position: relative;
+  z-index: 9;
+}
+.custom-header {
+  position: relative;
+  z-index: 9;
+}
 
 
 
