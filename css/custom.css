@@ -342,15 +342,20 @@ section.subscription, .bg-gradiant {
 }
 .guru-logo {
   background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
-  padding: 15px;
+  padding: 3px;
+  position: absolute;
+  top: 8px;
+  left: 19px;
+  transform: translate(-50%, -50%);
 }
 .guru-item {
   background-color: #ffeff7;
   border-radius: 19px;
   padding: 40px;
+  position: relative;
 }
 .call-to-content h5 {
   font-size: 43px;
@@ -1304,10 +1309,106 @@ section.banner-slide .slick-dots li button:before{
   position: relative;
   z-index: 9;
 }
-
-
-
-
-
-
+.guru-profile-home {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.guru-profile-home img {
+  border-radius: 100%;
+}
+@-webkit-keyframes mover {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+}
+.view-btn{
+  background-image:url(../images/shape.png);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  z-index: 999;
+  background-size: contain;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.event-full-content {
+  -webkit-box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  right: -72px;
+  transform: translate(-0, -50%);
+}
+.event-full-content:after {
+  top: 0px;
+  width: 6px;
+  bottom: 0px;
+  left: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  background-color: #feb300;
+}
+.event-date {
+  background-image: linear-gradient(#82b440, #4c6e1e);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
+  box-shadow: -2.394px 6.578px 15px 0 rgba(130,181,65,.5);
+  left: 0px;
+}
+.event-date h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.event-date h6 span {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+span.featured-items {
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.featured-items-group {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.book-btn{
+  padding: 15px 50px; 
+}
+.event-full-content {
+  width: 60%;
+}
+.event-row-flex .event-full-content {
+  position: unset;
+  width: 100%;
+  transform:unset;
+}
+.event-row-flex .event-item-im-wrapper {
+  height: 300px;
+}
+.event-row-flex .event-item-im-wrapper img {
+  height: 100%;
+}
 /*=================================== media query css ===================================*/
