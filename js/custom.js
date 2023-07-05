@@ -41,6 +41,17 @@ $(document).ready(function () {
 		adaptiveHeight: true,
 	});
 
+	$('.event-slide').slick({
+		// autoplay:true,
+		// autoplaySpeed:1500,
+		arrow: true,
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 3,
+		adaptiveHeight: true,
+	});
+	 
 	$(function () {
 		$('*[draggable!=true]', '.slick-track').unbind('dragstart');
 		$(".draggable-element").draggable();
