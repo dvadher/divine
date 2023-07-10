@@ -128,18 +128,19 @@ body {
   font-weight: 700;
 }
 .btn-large {
-  background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
-  color: #fff;
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
+  color: #484338;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 20px 50px;
   border-radius: 4px;
   box-shadow: -2.394px 6.578px 15px 0 rgba(130,181,65,.5);
 }
-.btn-large:hover{
+/* .btn-large:hover{
   background: linear-gradient(94.12deg, #39b549 -2.3%, #82b440 100.58%);
   color:#fff;
-}
+} */
 .top-slider {
   position: relative;
   z-index: 9999;
@@ -238,15 +239,7 @@ ul.main-menu a {
  color:#828282;
  font-size:13px;
 }
-.product-im-wrapper{
-  width: 200px;
-  height: 200px;
-  overflow:hidden;
-}
 .product-item {
-  border: 1px solid #ececec;
-  border-radius: 16px;
-  padding: 30px;
   position: relative;
 }
 .product-im-wrapper img {
@@ -270,8 +263,10 @@ ul.main-menu a {
   margin: 0;
   font-weight: 500;
 }
-.product-content p{
-  font-weight:600;
+.product-content p {
+  font-weight: 600;
+  color: #848484 !important;
+  font-size: 18px;
 }
 .product-btn {
   color: #fff;
@@ -328,10 +323,9 @@ label.product-btn {
 }
 .subscription-item {
   text-align: center;
-  background-color: #fff;
+  background-color: #e5dbc1;
   border-radius: 18px;
   padding: 19px 19px 50px;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
 }
 .subscription-item.center .subscribe-top-content {
   margin-bottom: 95px !important;
@@ -350,7 +344,7 @@ section.subscription, .bg-gradiant {
 }
 
 .subscription-item.center a.btn-large {
-  background: #d81416;
+  background-color: #ffda6b;
 }
 .guru-item-heading h5 {
   font-family: Sora, sans-serif;
@@ -371,7 +365,7 @@ section.subscription, .bg-gradiant {
   transform: translate(-50%, -50%);
 }
 .guru-item {
-  background-color: #ffeff7;
+  background-color: #e5dbc1;
     border-radius: 19px;
     padding: 40px;
     position: relative;
@@ -1713,11 +1707,11 @@ font-family: 'FontAwesome';
   opacity: 0;
 }
 .wtsp_chat {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   position: fixed;
   bottom: 100px;
-  left: 30px;
+  right: 30px;
 }
 .cart-pg-content .empty-cart, .checkout-pg-content .empty-cart, .order-tab .empty-cart{
   position: unset !important;
@@ -1841,6 +1835,7 @@ font-family: 'FontAwesome';
 .about{
   background-image: url(../images/parallax-decor.png);
   background-size: 100% 100%;
+  background-color: #f5f0e3;
 }
 .about-in-content.section-spacer {
   padding-bottom: 150px;
@@ -2175,7 +2170,7 @@ section.section-course .blog-entry:hover .overlay {
   top: 0;
   visibility: visible;
 }
-.overlay a {
+.overlay a, .gallery-footer a {
   background-image: url(../images/pattern-grudge.png);
   color: #484338;
   background-color: #ffda6b;
@@ -2227,4 +2222,155 @@ section.section-course .blog-entry:hover .overlay {
 }
 .section-course .blog-entry{
   overflow: hidden;
+}
+section.product-v2 {
+  background: #faf8f8;
+}
+.product-im-wrapper {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+}
+.star-full svg path {
+  fill: #ffc107;
+}
+.star-full svg {
+  width: 18px;
+  height: 18px;
+}
+.product-icon {
+  background-color: #fff;
+  width: 47px;
+  height: 47px;
+  padding: 12px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.06);
+  -ms-box-shadow: 0 0 30px 0 rgba(0,0,0,.06);
+  box-shadow: 0 0 30px 0 rgba(0,0,0,.06);
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out!important;
+    -ms-transition: all .4s ease-in-out!important;
+    transition: all .4s ease-in-out!important;
+    top: 0;
+    display: flex;
+}
+.product-icon:hover {
+  top: -5px;
+}
+.product-icon-group {
+  gap: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}.product-icon img {
+  transform: unset !important;
+}
+.product-item:hover .product-icon {
+  opacity: 1;
+
+}
+.product-icon.cart-btn {
+  background-image: none !important;
+  padding: 15px;
+}
+.guru-gallery-first {
+  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%) !important;
+  text-align: center;
+  padding: 30px;
+}
+.gallery-footer a {
+  transform: unset !important;
+  position: static;
+  margin-top: 40px;
+  display: block;
+}
+.guru-gallery-first h6 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.gallery-content-left img{
+  width:20px;
+  height:20px;
+}
+.gallery-item:before {
+  background: -moz-linear-gradient(top, rgba(126,132,70,0) 0%, rgba(126,132,70,0.09) 14%, rgba(126,132,70,0.23) 28%, rgba(126,132,70,0.61) 58%, rgba(126,132,70,0.84) 79%, rgba(126,132,70,0.96) 93%, rgba(126,132,70,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(126,132,70,0) 0%,rgba(126,132,70,0.09) 14%,rgba(126,132,70,0.23) 28%,rgba(126,132,70,0.61) 58%,rgba(126,132,70,0.84) 79%,rgba(126,132,70,0.96) 93%,rgba(126,132,70,1) 100%);
+  background: linear-gradient(to bottom, rgba(126,132,70,0) 0%,rgba(126,132,70,0.09) 14%,rgba(126,132,70,0.23) 28%,rgba(126,132,70,0.61) 58%,rgba(126,132,70,0.84) 79%,rgba(126,132,70,0.96) 93%,rgba(126,132,70,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007e8446', endColorstr='#7e8446',GradientType=0 );
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.gallery-item:hover:before{
+  height:100%;
+}
+.gallery-content {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  padding: 0px 20px;
+}
+.gallery-content-left, .gallery-content-right{
+  -webkit-transition: all 0.65s ease 0s;
+  -moz-transition: all 0.65s ease 0s;
+  -ms-transition: all 0.65s ease 0s;
+  -o-transition: all 0.65s ease 0s;
+  transition: all 0.65s ease 0s;
+  position: relative;
+  opacity:0;
+}
+.gallery-content-left {
+  left: -50%;
+}
+.gallery-content-right {
+  right: -50%;
+}
+.gallery-item:hover .gallery-content-left {
+  left: 0;
+  opacity:1;
+}
+.gallery-item:hover .gallery-content-right {
+  right: 0;
+  opacity:1;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-content-left img {
+  filter: invert(1);
+}
+.gallery-content p, .gallery-content h5 {
+  color: #fff;
+}
+.gallery-content-left {
+  padding-right: 20px;
+  border-right: 1px solid #fff;
+}
+.gallery-im-wrapper img {
+  object-fit: cover;
+}
+.gallery-content h5 {
+  font-size: 14px;
+}
+.eventsv2, section.our-gurus, section.product-v2{
+  background-image: url(../images/ckkaras.png) !important;
+  background-color:#f5f0e3;
+}
+section.subscription {
+  background: #f2e9d2;
+}
+.section-heading h2, .section-heading span {
+  color: #484338;
+  font-size: 30px;
+  letter-spacing: 0.15em;
 }
