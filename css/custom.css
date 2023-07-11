@@ -6,6 +6,9 @@ font-family: 'Inter', sans-serif;
 html{
   scroll-behaviour : smooth;
 } 
+[class*=bg-]:not(.bg-transparent):not(.bg-light):not(.bg-white):not(.btn-outline):not(body) {
+  color: #000;
+}
 .container {
   max-width: 1200px
 }
@@ -15,6 +18,21 @@ html{
 .icon-nav {
   margin-left: 8px;
 }
+.bg-lightv2{
+  background-color:#f5f0e3;
+}
+.bg-lightv3{
+  background-color:#f2e9d2;
+}
+.bg-darkv2, .guru-gallery-first{
+  background-color:#e5dbc1;
+}
+.eventsv2, .subscription{
+  background-image: url(../images/ckkaras.png) !important;
+}
+.guru-v2 p {
+  color: #000 !important;
+}
 body {
   font-family: 'Inter', sans-serif;
 	touch-action: manipulation;
@@ -23,7 +41,7 @@ body {
 	line-height: 1.1;
 	background: #ffffff;
   overflow-x: hidden;
-  color:#151515;
+  color:#484338;
   }
   p, a{
     font-family: 'Inter', sans-serif;
@@ -48,13 +66,13 @@ body {
    box-shadow: none;
   }
   .bg-green{
-    background-color:#51AA1B;
+    background-color:#7e8446;
   }
   .bg-marun{
     background-color: #d81416;
   }
   .text-green{
-   color:#51AA1B;
+   color:#7e8446;
   }
   .text-marun{
    color: #d81416;
@@ -106,13 +124,13 @@ body {
 
 /*================================= 4 Global Styles (#glob) =================================*/
 .bread-crumb.pg {
-  background-color: #ffeff7;
+  background-color: #f5f0e3 ;
   background-image: url(../images/chakra.webp);
   position: relative;
 }
 .bread-crumb .section-heading{
   position: relative;
-  z-index: 9;
+  z-index: 1;
 }
 .bread-crumb.pg:after {
   content: "";
@@ -152,7 +170,7 @@ body {
   width:120px;
 }
 .custom-header a{
-  color:#151515;
+  color:#484338;
   font-weight: 500;
   padding-bottom: 0;
 }
@@ -165,6 +183,10 @@ body {
   padding: 40px;
   display:none;
   z-index: 999;
+  background-image: url(../images/parallax-decor.png);
+    background-size: auto;
+    background-color: #f5f0e3;
+    box-shadow: -2.394px 6.578px 15px 0 rgba(250,218,107,.5);
 }
 .product-drop a{
   height:auto !important;
@@ -244,16 +266,13 @@ ul.main-menu a {
 }
 .product-im-wrapper img {
   object-fit: cover;
-  -ms-transform: scale(1);
-  transform: scale(1);
-  transition: all .4s ease-in-out;
 }
-.product-item:hover img{
+/* .product-item:hover img{
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-}
+} */
 .product-content h6 {
-  color: #151515;
+  color: #484338;
   font-size: 15px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -269,14 +288,15 @@ ul.main-menu a {
   font-size: 18px;
 }
 .product-btn {
-  color: #fff;
+  color: #000;
   border: 0;
   font-weight: 500;
   padding: 12px 30px;
-  border-radius: 30px;
   background-image: linear-gradient(#82b440, #39b549);
   font-size: 14px;
   box-shadow: -2.394px 6.578px 15px 0 rgba(130,181,65,.5);
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
 }
 
 .product-item .product-btn {
@@ -302,7 +322,9 @@ ul.main-menu a {
   height: 75px;
 }
 .subscribe-top-content {
-  background-color: #ffeff7;
+ 
+  background-color: #fff;
+
   border-radius: 19px;
   flex-direction: column;
   justify-content: center;
@@ -310,6 +332,18 @@ ul.main-menu a {
   margin-bottom: 55px;
   padding-top: 50px;
   display: flex;
+  background-image: url(../images/pattern-grudge.png);
+}
+.subscription-item:hover, .subscription-item.center:hover {
+  background: #7e8446;
+}
+.subscription-item:hover ul li {
+  color: #fff;
+}
+.subscription-item:hover ul li:after {
+  background-color: #fff;
+  color: #fff;
+  background-image: none !important;
 }
 label.product-btn {
   color: #fff;
@@ -326,6 +360,11 @@ label.product-btn {
   background-color: #e5dbc1;
   border-radius: 18px;
   padding: 19px 19px 50px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 .subscription-item.center .subscribe-top-content {
   margin-bottom: 95px !important;
@@ -335,12 +374,8 @@ label.product-btn {
   width: 100px;
   right: 0;
 }
-section.subscription, .bg-gradiant {
-  background: #f5f9fc;
-    background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
-}
 .subscription-item.center {
-  background: #51AA1B;
+  background: #7e8446;
 }
 
 .subscription-item.center a.btn-large {
@@ -354,7 +389,8 @@ section.subscription, .bg-gradiant {
   width:100%;
 }
 .guru-logo {
-  background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
+  background-color: #7e8446;
+  background-image: url(../images/pattern-grudge.png);
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -377,10 +413,10 @@ section.subscription, .bg-gradiant {
   font-weight: 700;
 }
 .call-to{
-  background-image: url(../images/wave.png);
-  background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
+  background-image: url(../images/pattern.jpg);
+  background-size: auto;
+  background-position: bottom;
+  overflow: hidden;
 
 }
 .call-im-wrapper {
@@ -391,7 +427,7 @@ section.subscription, .bg-gradiant {
   width: 400px;
 }
 .time-icon {
-  background: #51AA1B;
+  background: #7e8446;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -408,14 +444,14 @@ section.subscription, .bg-gradiant {
 .event-content-top h4 {
   font-size: 30px;
   font-weight: 600;
-color: #151515;
+color: #484338;
 }
 .row.event-col h4 {
   font-size: 24px;
   line-height: 30px;
 }
 .event-content-top p{
-  color: #151515;
+  color: #484338;
 }
 .event-content-top {
   padding: 30px;
@@ -431,7 +467,7 @@ color: #151515;
   object-fit: cover;
 }
 .event-type {
-  background: #ffeff7;
+  background: #f5f0e3 ;
   color: #d81416;
   font-weight: 600;
   padding: 10px 20px;
@@ -483,6 +519,7 @@ span.border-line {
 .custom-footer {
   border-top: 1px solid #ececec;
   padding: 60px 0px 0px;
+  
 }
 .banner-item img {
   width: 100%;
@@ -525,7 +562,7 @@ section.blog .media-img img {
   transform: translate(-50%);
 }
 .blog-content:hover .entry-content {
-  background-color: #ffeff7;
+  background-color: #f5f0e3 ;
   bottom: -68px;
   transition: all .5s ease 0s;
 }
@@ -619,7 +656,7 @@ ul.crumb-items li a {
 
 /* When the checkbox is checked, add a blue background */
 .check-container input:checked ~ .checkmark {
-  background-color: #51aa1b;
+  background-color: #7e8446;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -723,7 +760,7 @@ ul.crumb-items li a {
     text-decoration: underline;
 }
 .my-aacount-left {
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
+  background-color:#e5dbc1;
   padding: 30px;
   border-radius: 16px;
 }
@@ -735,7 +772,7 @@ ul.crumb-items li a {
   background: transparent;
 }
 .my-aacount-left  .nav-link{
-  background: #f7f7f7 !important;
+  background: #f2e9d2 !important;
   font-weight: 600;
   padding:20px 0px;
   border-radius: 19px;
@@ -743,8 +780,11 @@ ul.crumb-items li a {
   text-transform: uppercase;
   font-size: 14px;
 }
+.my-aacount-left .nav-tabs .nav-item{
+  margin-bottom: 20px;
+}
 .my-aacount-left .nav-tabs .nav-link.active {
-  background: #51AA1B !important;
+  background: #7e8446 !important;
   color:#fff;
 }
 .my-aacount-left .nav-link:after{
@@ -767,7 +807,7 @@ ul.crumb-items li a {
   background: #fff;
   position: absolute;
   top: -20px;
-  color: #51aa1b;
+  color: #7e8446;
   border-radius: 30px;
   padding: 6px 30px;
   font-size: 20px;
@@ -813,7 +853,7 @@ ul.crumb-items li a {
   left: 0;
   width: 53px;
   height: 4px;
-  background: #51AA1B;
+  background: #7e8446;
 }
 .event-heading {
   margin-bottom: 30px;
@@ -847,7 +887,7 @@ ul.crumb-items li a {
   align-items: center;
   justify-content: center;
   padding: 14px !important;
-  background: #ffeff7 !important;
+  background: #f5f0e3  !important;
   border-radius: 6px;
 }
 .event-search-icon img {
@@ -898,8 +938,8 @@ ul.crumb-items li a {
   border-radius: 100%;
 }
 span.guru-type {
-  background-image: linear-gradient(#82b440, #39b549);
-  color: #fff;
+  background-color: #e5dbc1	;
+  color: #000;
   font-size: 12px;
   padding: 6px 10px;
   border-radius: 30px;
@@ -943,7 +983,7 @@ span.guru-type {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#82b440, #4c6e1e);
+  background-color: #7e8446;
   margin-right: 10px;
 }
 .contact-detail-item i:before {
@@ -1049,15 +1089,19 @@ a.cart-btn {
 }
 .qty-container .qty-btn-plus{
   margin-left: -1px;
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
 }
 .qty-container .qty-btn-minus{
   margin-right: -1px;
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
 }
 .product-state-detail {
   padding: 0px 30px;
     margin-top: 30px;
+   
+
 }
 .product-wrap-item {
   margin-top: 20px;
@@ -1155,7 +1199,7 @@ ul.special-list li {
   font-weight: 700;
 }
 .eventdetail-type p {
-  background: #ffeff7;
+  background: #f5f0e3 ;
   color: #d81416;
   font-weight: 600;
   padding: 7px 30px;
@@ -1173,17 +1217,17 @@ ul.special-list li {
   padding: 0px 30px;
 }
 a.social-item {
-  background-image: linear-gradient(#82b440, #4c6e1e);
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  box-shadow: -2.394px 6.578px 15px 0 rgba(130,181,65,.5);
 }
 a.social-item i:before{
-  color:#fff;
+  color:#000
 }
 h5.author {
   font-weight: 700;
@@ -1192,9 +1236,6 @@ h5.author {
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   padding: 30px 0px;
-}
-.product-detail-pg{
-  margin:100px 0px;
 }
 .product-detail-pg .product-im-wrapper{
   width: 400px;
@@ -1224,11 +1265,12 @@ h5.author {
   height: 100%;
 }
 .slide-arrow i:before {
-  color: #fff;
+  color: #000;
   opacity: 0.6;
 }
 .slide-arrow {
-  background-image: linear-gradient(#82b440, #4c6e1e);
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
   border: 0;
   width: 40px;
   height: 40px;
@@ -1236,7 +1278,7 @@ h5.author {
 }
 button.slide-arrow.prev-arrow, button.slide-arrow.next-arrow.slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 36%;
   left: 0;
   transform: translate(-50%, -50%);
   z-index: 9;
@@ -1249,10 +1291,10 @@ button.slide-arrow.next-arrow.slick-arrow {
   filter: invert(1);
 }
 .row.dashboard-row .guru-logo {
-  padding: 21px;
+  padding: 32px;
 }
 .dashboard-item {
-  background-color: #ffeff7;
+  background-color: #e5dbc1;
   border-radius: 19px;
   padding: 30px;
   display: block;
@@ -1296,12 +1338,6 @@ span.package-count {
 }
 .subscription-item ul.special-list {
   column-count: unset;
-}
-.subscription-item.center ul.special-list li {
-  color: #fff;
-}
-.subscription-item.center ul.special-list li:after {
-  background: #fff;
 }
 section.banner-slide .slick-dots li button:before{
   font-size: 25px;
@@ -1436,7 +1472,7 @@ span.featured-items {
   flex-wrap: wrap;
 }
 .book-btn{
-  padding: 15px 50px; 
+  padding: 20px 50px;
 }
 .event-full-content {
   width: 60%;
@@ -1467,7 +1503,7 @@ a.dashboard-item .guru-logo {
 .counter-im-wrap {
   width: 100px;
   height: 100px;
-  background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
+  background: #7e8446;
   box-shadow: -2.394px 6.578px 15px 0 rgba(130,181,65,.5);
   padding: 28px;
 }
@@ -1500,16 +1536,14 @@ a.dashboard-item .guru-logo {
   display: inline-block;
 }
 .mission ul {
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
+  background: #e5dbc1;
   border: 0;
-  border-radius: 30px;
 }
 .mission .nav-link {
   background: transparent;
   color: #000;
   font-size: 14px;
   width: 100%;
-  border-radius: 30px;
   font-size:14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -1519,9 +1553,8 @@ a.dashboard-item .guru-logo {
   width: 50%;
 }
 .mission .nav-tabs .nav-item.show .nav-link, .mission .nav-tabs .nav-link.active {
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
-  color: #fff !important;
-  background-image: linear-gradient(#82b440, #4c6e1e);
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
 }
 .mission .nav-link:after{
 display: none;
@@ -1587,13 +1620,13 @@ display: none;
   border-radius: 0;
 }
 .guru-detail-tab-content {
-  background-color: #ffeff7;
+  background-color: #f5f0e3 ;
   padding: 50px;
 }
 
 .guru-tab ul#myTab {
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%) !important;
-  border-radius: 0;
+  background-image: url(../images/ckkaras.png) !important;
+  background-color:  #e5dbc1	 !important;
 }
 .accordion_one .panel-group {
     
@@ -1696,8 +1729,8 @@ font-family: 'FontAwesome';
     margin-left: 0;
     margin-top: -17px;
     margin-right: 0;
-    background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
-    color: #fff;
+    background: #e5dbc1;
+    color: #000;
     font-weight: 900;
 }
 .country-drop span {
@@ -1721,7 +1754,8 @@ font-family: 'FontAwesome';
     width: 100%;
     height: 100%;
     transform: unset;
-    box-shadow:none
+    box-shadow:none;
+    background-image: url(../images/pattern-grudge.png);
 }
 .cart-pg-content  .product-cart-footer, .order-tab .product-cart-footer {
   margin-top: 30px;
@@ -1775,7 +1809,6 @@ font-family: 'FontAwesome';
   margin-bottom: 30px;
 }
 .contact-icon i {
-  background: linear-gradient(94.12deg, #82b440 -2.3%, #39b549 100.58%);
   width: 50px;
   height: 50px;
   display: flex;
@@ -1783,13 +1816,16 @@ font-family: 'FontAwesome';
   justify-content: center;
   border-radius: 100%;
   margin-right: 20px;
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
 }
 .contact-icon i:before {
-  color: #fff;
-  font-size: 27px;
+  color: #000000b0;
+  font-size: 20px;
 }
 .contact-info {
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%);
+  background-color: #e5dbc1;
+  background-image: url(../images/pattern-grudge.png);
   padding: 40px;
   border-radius: 10px;
   height:100%;
@@ -2037,9 +2073,7 @@ h4.organizer-name {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-section.section-blog, .bg-grayv2 {
-  background-color: #f5f0e3 !important;
-}
+
 .entry-thumb {
   position: relative;
   z-index: 99;
@@ -2146,7 +2180,7 @@ section.section-course .entry-details {
 .dt_yoga_courses-times i:before {
   font-size: 20px;
   opacity: 0.5;
-  color: #51AA1B;
+  color: #7e8446;
 }
 .overlay {
   -webkit-transition: all 0.35s ease 0s;
@@ -2222,13 +2256,11 @@ section.section-course .blog-entry:hover .overlay {
 }
 .section-course .blog-entry{
   overflow: hidden;
-}
-section.product-v2 {
-  background: #faf8f8;
+  top: -44px;
 }
 .product-im-wrapper {
   overflow: hidden;
-  background-color: #fff;
+  background-color: #f5f0e3;
   padding: 20px;
   border-radius: 16px;
 }
@@ -2276,9 +2308,8 @@ section.product-v2 {
   padding: 15px;
 }
 .guru-gallery-first {
-  background-image: linear-gradient(180deg,#dffff6 0%,#eefde9 100%) !important;
   text-align: center;
-  padding: 30px;
+    padding: 30px;
 }
 .gallery-footer a {
   transform: unset !important;
@@ -2362,15 +2393,166 @@ section.product-v2 {
 .gallery-content h5 {
   font-size: 14px;
 }
-.eventsv2, section.our-gurus, section.product-v2{
-  background-image: url(../images/ckkaras.png) !important;
-  background-color:#f5f0e3;
-}
-section.subscription {
-  background: #f2e9d2;
-}
 .section-heading h2, .section-heading span {
   color: #484338;
   font-size: 30px;
   letter-spacing: 0.15em;
+}
+
+.guru-v2  .entry-details {
+  padding: 30px;
+}
+.guru-v2 .team-meta {
+  background: #e5dbc1;
+  padding: 35px;
+}
+.guru-v2 .entry-thumb {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.guru-v2 .entry-thumb img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+.guru-v2 .team-meta {
+  background: #e5dbc1;
+  padding: 35px 35px 76px;
+  position: relative;
+  z-index: 9;
+  border-bottom: 1px dashed #a58251;
+}
+.guru-v2 .entry-details {
+  padding: 90px 30px 30px 30px;
+}
+.team-meta h4 a {
+  color: #484338 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.guru-v2 .blog-entry:hover .team-meta {
+  background: #7e8446;
+}
+
+.guru-v2 .blog-entry .team-meta{
+  -webkit-transition: all 0.65s ease 0s;
+  -moz-transition: all 0.65s ease 0s;
+  -ms-transition: all 0.65s ease 0s;
+  -o-transition: all 0.65s ease 0s;
+  transition: all 0.65s ease 0s;
+}
+.guru-v2 .blog-entry:hover .entry-title, .guru-v2 .blog-entry:hover .team-meta h4 a{
+  color: #fff !important;
+}
+.subscription-item.center {
+  background: #7e8446;
+}
+section.call-to h5 {
+  color: #484338;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.view-btn{
+  display: none;
+}
+.course-pg-content .entry-thumb img {
+  object-fit: cover;
+  object-position: top;
+}
+.course-pg-content .entry-thumb {
+  height: 500px;
+  object-fit: contain;
+}
+.top-issues-im-wrapper {
+  height: 380px;
+}
+.top-issues-im-wrapper img {
+  border-radius: 30px;
+  object-fit: cover;
+}
+.top-issues-item:after {
+  background: -moz-linear-gradient(top, rgba(126,132,70,0) 0%, rgba(126,132,70,0.09) 14%, rgba(126,132,70,0.23) 28%, rgba(126,132,70,0.61) 58%, rgba(126,132,70,0.84) 79%, rgba(126,132,70,0.96) 93%, rgba(126,132,70,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(126,132,70,0) 0%,rgba(126,132,70,0.09) 14%,rgba(126,132,70,0.23) 28%,rgba(126,132,70,0.61) 58%,rgba(126,132,70,0.84) 79%,rgba(126,132,70,0.96) 93%,rgba(126,132,70,1) 100%);
+  background: linear-gradient(to bottom, rgba(126,132,70,0) 0%,rgba(126,132,70,0.09) 14%,rgba(126,132,70,0.23) 28%,rgba(126,132,70,0.61) 58%,rgba(126,132,70,0.84) 79%,rgba(126,132,70,0.96) 93%,rgba(126,132,70,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007e8446', endColorstr='#7e8446',GradientType=0 );
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 30px;
+}
+.issue-title {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  left: 30px;
+  bottom: 30px;
+}
+.btn-yellow{
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
+  color: #000;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.about-pg-im-wrapper:after {
+  border-color: #4843385c !important;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  top: 15px;
+  border: 1px solid;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: all 0.70s ease 0s;
+  -moz-transition: all 0.70s ease 0s;
+  -ms-transition: all 0.70s ease 0s;
+  -o-transition: all 0.70s ease 0s;
+  transition: all 0.70s ease 0s;
+  width: 98%;
+  height: 92%;
+}
+.about-pg-im-wrapper img {
+  position: relative;
+  z-index: 9;
+}
+section.benifit-yoga {
+  background-color: #f2e9d2 !important;
+}
+section.benifit-yoga .entry-title {
+  background: #e5dbc1;
+  padding: 35px 35px 35px;
+  position: relative;
+  z-index: 999;
+}
+section.benifit-yoga .blog-entry:hover:after{
+  width: 94%;
+  height: 82%;
+}
+section.benifit-yoga .blog-entry:before{
+  border-color: #4843385c  !important;
+}
+.guru-v2 .blog-entry:hover h6 {
+  color: #fff !important;
+}
+.shop-pg-content .product-im-wrapper{
+  background-color: #e5dbc1;
+}
+.product-detail-pg .product-im-wrapper{
+  background-color: #e5dbc1;
+}
+.related-products .slick-track{
+  display: flex;
+  gap: 15px;
 }

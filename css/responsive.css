@@ -1,4 +1,25 @@
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+.mob-auth-group {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.navbar-collapse {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+.navbar-brand {
+  position: relative;
+  z-index: 999;
+}
   .slick-dotted.slick-slider {
     margin-bottom: 0;
 }
@@ -27,7 +48,8 @@
   ul.main-menu {
     padding-bottom: 20px;
     border-top: 1px solid #ececec;
-    margin-top: 10px;
+    padding-top: 67px;
+    width: 100%;
 }
   .custom-logo img {
     width: 100px;
@@ -66,8 +88,9 @@
   }
 
   .header-search {
-    top: 59px;
+    top: 48px;
     padding: 10px;
+    left: -19px;
   }
 
   .navbar .container {
