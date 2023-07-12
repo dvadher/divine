@@ -136,6 +136,7 @@ section.about .about-seperater {
 
   button.navbar-toggler i:before {
     font-size: 20px;
+    color: #7E8447 !important;
   }
 
   button.navbar-toggler i {
