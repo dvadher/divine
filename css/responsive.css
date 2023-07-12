@@ -127,6 +127,7 @@ section.about .about-seperater {
 
   button.navbar-toggler.collapsed i:before {
     content: "\f0c9";
+    color: #7E8447 !important;
   }
 
   button.navbar-toggler i:before {
@@ -627,7 +628,6 @@ td.product-subtotal {
     }
     ul.main-menu {
       padding-bottom: 20px;
-      border-top: 1px solid #ececec;
       padding-top: 67px;
       width: 100%;
   }
