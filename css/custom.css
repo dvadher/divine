@@ -706,13 +706,17 @@ ul.crumb-items li a {
   font-weight: 700;
   margin-bottom: 10px;
 }
-.form-group input {
-  border: 1px solid #e1e1e1;
+.form-group input, .form-group textarea {
+  border: 1px solid #7e844652;
   height: 45px;
-  padding: 0px 20px;
   font-size: 14px;
-  width:100%;
+  width: 100%;
+  padding: 15px;
   border-radius: 10px;
+  background: transparent;
+}
+.form-group textarea{
+  height:120px;
 }
 .side-border {
   width: 100%;
@@ -2577,4 +2581,35 @@ section.top-issues .slick-arrow {
 }
 .footer-donate .btn-large {
   width: fit-content;
+}
+form.subscribe-form input {
+  border: 0;
+  background: transparent;
+  width: 100%;
+}
+form.subscribe-form {
+  border: 1px solid #ececec;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+form.subscribe-form button.btn-large {
+  padding: 15px 20px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 30px;
+  width: auto;
+}
+.footer-donate a {
+  padding: 15px 50px;
+}
+form.subscribe-form button.btn-large {
+  margin: 0 !important;
+}
+a.sitemap-link {
+  background-color: #ffda6b;
+  background-image: url(../images/pattern-grudge.png);
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 4px;
 }

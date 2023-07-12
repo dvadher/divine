@@ -2,6 +2,13 @@
   .guru-tab .nav-tabs .nav-item{
     width: 33.333%;
   }
+  .row.dashboard-row .guru-logo {
+    padding: 19px;
+}
+a.dashboard-item .guru-logo {
+  width: 80px;
+  height: 80px;
+}
   .mission .nav-link{
     padding: 13px 10px !important;
   }
@@ -425,9 +432,6 @@ a.dashboard-item h5 {
 }
 .row.dashboard-row .col-6.col-md-4 {
   margin-bottom: 15px;
-}
-.row.dashboard-row .guru-logo {
-  padding: 12px;
 }
 .guru-logo{
   width: 50px;
@@ -928,7 +932,7 @@ td.product-subtotal {
     width: 90%;
   }
   .my-aacount-left .nav-tabs .nav-item{
-    width: 50%;
+    width: 100%;
     float: left !important;
     margin-top: 10px;
   }
@@ -998,18 +1002,11 @@ td.product-subtotal {
   .product-item{
     padding: 20px;
   }
-  .signin-block .auth-im-wrapper img{
-    display: none;
-  }
   .auth-content {
     padding: 25px;
   }
   .signin-block{
     width: 100%;
-  }
-  .about{
-    background-size: inherit;
-      background-color: #f5f0e3;
   }
   .about-btn-group {
     display: flex;
@@ -1019,6 +1016,28 @@ td.product-subtotal {
     gap: 20px;
   }
 
+  .main-menuright.auth-group.d-flex.d-md-block.d-lg-none.align-items-center.mob-auth-group {
+    display: none !important;
+}
+.custom-header .float-right{
+  width: 70%;
+  display: flex;
+}
+.main-menuright {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center !important;
+}
+.row.dashboard-row .guru-logo{
+  padding: 25px;
+}
+.col-lg-5.newsletter {
+  margin-top: 30px;
+}
+.footer-donate{
+  margin-bottom: 30px;
+}
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1024px) {}
