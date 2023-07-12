@@ -22,6 +22,30 @@ $(document).ready(function () {
 	});
 
 
+	$('.issues').slick({
+		arrow: true,
+		dots: false,
+		loop:false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 4,
+		adaptiveHeight: true,
+		prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+		nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+		responsive: [
+			{
+			  breakpoint: 767,
+			  settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+			},
+		  ],
+	
+	});
+
+
+
 	$('.top-slider').slick({
 		arrow: true,
 		dots: false,
